@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container > div {
+  height: 130px;
+  width: 100%;
+}
+
+#box1 {
+  background-color: purple;
+}
+
+#box2 {
+  background-color:fuchsia;
+}
+
+#box3 {
+  background-color:rebeccapurple;
+}
+
+#box4 {
+  background-color:green;
+}
+
+#box5 {
+  background-color:yellow;
+}
+
+#box6 {
+  background-color:orange;
+}
+
+#box7 {
+  background-color: red;
+}
+
+@media screen and (min-width: 601px) {
+  #box3, #box4, #box5 {
+    flex-basis: 33.33%;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .container > div { /*Also could have specified box IDs*/
+    flex-basis: 50%;
+  }
+}
